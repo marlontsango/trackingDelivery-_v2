@@ -49,7 +49,7 @@ class ClientController extends Controller
     }
 
     public function getClientById($id){
-        $clients = DB::table('clients')->where('id', $id)->get()->first();
+        $clients = DB::table('clients')->where('id', $id)->first();
 
         return response()->json($clients);
 

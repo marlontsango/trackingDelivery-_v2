@@ -91,6 +91,20 @@
             });
             $('#EditDeliveryModal').modal();
         });
+        $('table #EditClientBtn').on('click',function(event){
+            event.preventDefault();
+            var href = $(this).attr('href');
+            $.get(href, function(delivery, status){
+                $('#id').val(delivery.id);
+                $('#prenom').val(delivery.prenom);
+                $('#code').val(delivery.code);
+                $('#nom').val(delivery.nom);
+                $('#email').val(delivery.email);
+                $('#telephone').val(delivery.telephone);
+
+            });
+            $('#EditClientModal').modal();
+        });
     });
 
 </script>
