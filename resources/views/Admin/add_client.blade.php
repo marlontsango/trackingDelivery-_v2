@@ -82,7 +82,7 @@
 
                     <div class="md-form mb-2">
                         <label data-error="wrong" data-success="right" for="form29">Code Client</label>
-                        <input name="id" class="form-control validate" placeholder="code " required>
+                        <input name="code" class="form-control validate" placeholder="code " required>
                     </div>
 
                     <div class="md-form mb-2">
@@ -128,35 +128,36 @@
                         </div>
                     </div>
                     <div class="modal-body mx-3">
+                        <input name="id" id="id" class="form-control validate" >
+
                         <div class="md-form mb-2">
                             <label data-error="wrong" data-success="right" for="form34">surname</label>
-                            <input name="prenom" class="form-control validate" placeholder="Client Surname " required>
+                            <input name="prenom" id="prenom" class="form-control validate" placeholder="Client Surname " required>
                         </div>
 
                         <div class="md-form mb-2">
                             <label data-error="wrong" data-success="right" for="form29">Code Client</label>
-                            <input name="id" class="form-control validate" placeholder="code " required>
+                            <input name="code" id="code"  class="form-control validate" placeholder="code " required>
                         </div>
 
                         <div class="md-form mb-2">
                             <label data-error="wrong" data-success="right" for="form32">name</label>
-                            <input name="nom" class="form-control validate" placeholder="name " required>
+                            <input name="nom" id="nom" class="form-control validate" placeholder="name " required>
                         </div>
 
                         <div class="md-form mb-2">
                             <label data-error="wrong" data-success="right" for="form8"> email</label>
-                            <input name="email" type="text" class="form-control validate" placeholder="email">
+                            <input name="email" id="email" type="text" class="form-control validate" placeholder="email">
                         </div>
                         <div class="md-form mb-2">
                             <label data-error="wrong" data-success="right" for="form8">telephone</label>
-                            <input name="telephone" class="form-control validate" placeholder="Telephone :" required>
+                            <input name="telephone" id="telephone" class="form-control validate" placeholder="Telephone :" required>
                         </div>
 
                     </div>
                     <div class="modal-footer d-flex justify-content-center">
                         <button type="submit" class="btn btn-primary">save</button>
                         <button type="button" class="btn btn-secondary ml-2" data-dismiss="modal">Fermer</button>
-
                     </div>
 
                 </form>

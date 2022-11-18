@@ -33,7 +33,7 @@ Route::group(['prefix' => 'admin'], function () {
     Route::get('/create-client', [ClientController::class, 'Home'])->name('create-client');
 
     Route::post('/save-client', [ClientController::class, 'SaveClient'])->name('save-client');
-    Route::get('/update-client', [ClientController::class, 'updateClient'])->name('update-client');
+    Route::post('/update-client', [ClientController::class, 'updateClient'])->name('update-client');
     Route::get('/findByIdClient/{id}', [ClientController::class, 'getClientById'])->name('get-client');
 
 

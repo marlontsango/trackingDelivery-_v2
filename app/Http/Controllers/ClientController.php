@@ -36,7 +36,7 @@ class ClientController extends Controller
     public function SaveClient(Request $request){
 
         $data= DB::table('clients')->insert([
-            'code' => $request->id,
+            'code' => $request->code,
             'nom'=>$request->nom,
             'email'=>$request->email,
             'prenom'=>$request->prenom,
@@ -59,7 +59,7 @@ class ClientController extends Controller
     public function updateClient(Request $request){
 
         $data = [
-            'code' => $request->id,
+            'code' => $request->code,
             'nom'=>$request->nom,
             'email'=>$request->email,
             'prenom'=>$request->prenom,
@@ -68,7 +68,7 @@ class ClientController extends Controller
 
         DB::table('clients')->where('id',$request->id)->update($data);
 
-        return redirect()->route('Admin.add_client',compact('clients'));
+        return redirect()->back();
 
     }
    //
